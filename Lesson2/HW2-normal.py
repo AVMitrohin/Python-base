@@ -64,3 +64,5 @@ for i in lst3:
     if lst3.count(i) == 1:
         lst4.append(i)
 print(lst4)
+
+
