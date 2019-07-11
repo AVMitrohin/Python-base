@@ -14,10 +14,15 @@
 # Подсказка: воспользоваться методом .format()
 
 fruits = ["яблоко", "банан", "киви", "арбуз"]
-for i in fruits:
-    count = 1
-    print(f"{count}.", '{}'.format(i).rjust(6))
-    count += 1
+# for i in fruits:
+#     count = 1
+#     print(f"{count}.", '{}'.format(i).rjust(6))
+#     count += 1
+
+right_offset = len(max(fruits, key=len))
+
+for index, item in enumerate(fruits, start=1):
+    print('{}. {}'.format(index, item.rjust(right_offset)))
 
 # Задача-2:
 # Даны два произвольные списка.
